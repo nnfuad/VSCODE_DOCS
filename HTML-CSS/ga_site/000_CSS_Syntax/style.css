@@ -1,0 +1,48 @@
+/*
+h1 -> selector
+color-> property
+red -> value
+*/
+body{
+    background: url(https://i.ytimg.com/vi/Z36pBxnjdN8/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBxTihO52vTv9sUI4br2nsF1P0DTg);
+    background-size: 10000px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-blend-mode: darken;
+
+    /*shorthand*/
+    background: #f78fb3 url(https://i.ytimg.com/vi/Z36pBxnjdN8/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBxTihO52vTv9sUI4br2nsF1P0DTg);
+
+}
+h1{
+    color: blue; /*Declaration*/
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+p{
+    font-size: 18px;
+    color: red;
+}
+div p{
+    width: 200px;
+    height: 200px;
+    background: black;
+}
+span{
+    width: 200px;
+    height: 200px;
+    background: black;
+}
+.text-bk{
+    color: aquamarine;
+}
+
+.Terminal{
+    background: rgb(39, 40, 55);
+    width: 1000;
+    height: 1000;
+    color: aliceblue;
+    font: inherit;
+    text-size-adjust: ;
+}

@@ -1,0 +1,33 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background: rgb(172, 83, 236);
+    background-position: auto;
+}
+div{
+
+}
+
+.parent{
+    width: 300px;
+    height: 300px;
+    background: black;
+    margin-top: 20px;
+    margin-left: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    padding-bottom:  20px;
+    color: azure;
+    font-size: smaller;
+}
+
+.child{
+    background: #f78fb3;
+    margin-top: 20px;
+    margin-left: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding: 20px;
+}
