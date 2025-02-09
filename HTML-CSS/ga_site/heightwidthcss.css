@@ -24,7 +24,7 @@ div{
     font-size: smaller;
 }
 
-.child{
+.child:hover,:active{
     background: #f78fb3;
     margin-top: 20px;
     margin-left: 20px;
@@ -32,12 +32,6 @@ div{
     padding-right: 20px;
     padding: 20px;
 }
-
-@keyframes example {
-    from {background-color: rgba(0, 0, 0, 0.217);}
-    to {background-color: rgba(255, 255, 0, 0.527);}
-  }
-
 button{
     background: #f78fb3;
     margin-top: 20px;
@@ -46,18 +40,14 @@ button{
     padding-right: 20px;
     padding: 20px;
     margin: 30px;
-    animation-name: example;
-    animation-duration: 10s;
-    animation-delay: .5s;
-    animation-iteration-count: 400;
 }
-
-
 .button1:hover{
     cursor: pointer;
     background: #f78ff4;
+    
 }
 .button1:active{
     cursor: pointer;
     background: #f78ff464;
+    
 }

@@ -32,20 +32,20 @@ console.log(student["salary"]);
 student.age++;
 console.log("Fuad is "+student.age);
 
-do{
- y = prompt("Whats your age?");
- y>=18 ? console.log("okay Ill let you in") : console.log("Restricted");
- z=y;
-}
-while(y<18);
+// do{
+//  y = prompt("Whats your age?");
+//  y>=18 ? console.log("okay Ill let you in") : console.log("Restricted");
+//  z=y;
+// }
+// while(y<18);
 
-do{
+// do{
     
-    y = prompt(`Bro are you sure u are ${z} years old?`);
-    y=="YES"||y=="yes"||y=="Yes"||y=="yeS"||y=="Y"||y=="y" ? console.log("okay Ill let you in") : console.log("Yoy little pucker, whyd you lie???");
+//     y = prompt(`Bro are you sure u are ${z} years old?`);
+//     y=="YES"||y=="yes"||y=="Yes"||y=="yeS"||y=="Y"||y=="y" ? console.log("okay Ill let you in") : console.log("Yoy little pucker, whyd you lie???");
    
-   }
-   while(!( y=="YES"||y=="yes"||y=="Yes"||y=="yeS"||y=="Y"||y=="y"));
+//    }
+//    while(!( y=="YES"||y=="yes"||y=="Yes"||y=="yeS"||y=="Y"||y=="y"));
 
 str = "NNF";
 for (let i of str){
@@ -66,6 +66,13 @@ console.log(x);
 x = s.replaceAll("i", "fku");
 console.log(x);
 console.log(x.charAt(2));
+
+y = prompt("Enter your Full name (WITHOUT SPACES)");
+x= y.slice();
+console.log("Your full name is "+ x);
+lowerName = x.toLowerCase()
+username = lowerName.concat(lowerName.length);
+console.log("Your username is @"+ username);
 
 
 

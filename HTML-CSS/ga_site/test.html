@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+            background: #1a1a1a;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: background 0.5s ease, color 0.5s ease;
+        }
+
+        .login-container {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            z-index: 2;
+            transition: background 0.5s ease;
+        }
+
+        .login-container input {
+            display: block;
+            margin: 10px auto;
+            padding: 10px;
+            width: 80%;
+            border: none;
+            border-radius: 5px;
+            background: #333;
+            color: white;
+            transition: background 0.5s ease;
+        }
+
+        .login-container button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background: #4CAF50;
+            color: white;
+            cursor: pointer;
+            transition: background 0.5s ease;
+        }
+
+        .login-container button.ForgotPass {
+            background: #555;
+        }
+
+        .hexagon {
+            position: absolute;
+            width: 60px;
+            height: 34.64px;
+            background-color: #4CAF50;
+            margin: 17.32px 0;
+            transform: rotate(90deg);
+            animation: move 10s infinite;
+            transition: background-color 0.5s ease;
+        }
+
+        .hexagon:before,
+        .hexagon:after {
+            content: "";
+            position: absolute;
+            width: 0;
+            border-left: 30px solid transparent;
+            border-right: 30px solid transparent;
+            transition: border-color 0.5s ease;
+        }
+
+        .hexagon:before {
+            bottom: 100%;
+            border-bottom: 17.32px solid #4CAF50;
+        }
+
+        .hexagon:after {
+            top: 100%;
+            width: 0;
+            border-top: 17.32px solid #4CAF50;
+        }
+
+        @keyframes move {
+            0% { transform: translate(0, 0) rotate(90deg); }
+            50% { transform: translate(200px, 200px) rotate(90deg); }
+            100% { transform: translate(0, 0) rotate(90deg); }
+        }
+
+        .hexagon:hover {
+            animation: none;
+            transform: scale(1.5) rotate(90deg);
+        }
+
+        /* Theme Purple Styles */
+        /*
+        body.theme-purple {
+            background: #871F78;
+        }
+        */
+        body.theme-purple .login-container {
+            background: rgba(0, 0, 0, 0.7); /* Explicitly set the login container background */
+        }
+    
+        body.theme-purple .login-container button {
+            background: #871F78;
+        }
+
+        body.theme-purple .hexagon {
+            background-color: #871F78;
+        }
+
+        body.theme-purple .hexagon:before {
+            border-bottom-color: #871F78;
+        }
+
+        body.theme-purple .hexagon:after {
+            border-top-color: #871F78;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>WELCOME TO AC</h2>
+        <input type="text" placeholder="Username">
+        <input type="password" placeholder="Password">
+        <button>Login</button>
+        <br>
+        <br>
+        <button class="ForgotPass">Forgot Password</button>
+        <br>
+        <button>Signup</button>
+    </div>
+
+    <div class="hexagon" style="top: 20%; left: 10%;"></div>
+    <div class="hexagon" style="top: 30%; left: 25%;"></div>
+    <div class="hexagon" style="top: 50%; left: 30%;"></div>
+    <div class="hexagon" style="top: 80%; left: 50%;"></div>
+    <div class="hexagon" style="top: 30%; left: 70%;"></div>
+    <div class="hexagon" style="top: 90%; left: 85%;"></div>
+    <div class="hexagon" style="top: 60%; left: 90%;"></div>
+    <div class="hexagon" style="top: 20%; left: 95%;"></div>
+
+    <script>
+        const hexagons = document.querySelectorAll('.hexagon');
+        const body = document.body;
+
+        hexagons.forEach(hexagon => {
+            hexagon.addEventListener('mouseenter', () => {
+                body.classList.add('theme-purple');
+            });
+
+            hexagon.addEventListener('mouseleave', () => {
+                body.classList.remove('theme-purple');
+            });
+        });
+    </script>
+</body>
+</html>
